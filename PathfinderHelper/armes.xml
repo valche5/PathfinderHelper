@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Armes>
+  <Munitions>
+    <Munition>
+      <Nom>Carreaux</Nom>
+      <Nombre>10</Nombre>
+      <Prix devise="po">1</Prix>
+      <Poids unité="g">500</Poids>
+    </Munition>
+  </Munitions>
+  
+  <Arme>
+    <Nom>Attaque à mains nues</Nom>
+    <Catégorie>Armes courantes</Catégorie>
+
+    <CAC>Oui</CAC>
+    <Distance>Non</Distance>
+    <Légère>Oui</Légère>
+    <Mains>1</Mains>
+
+    <Prix devise="po"></Prix>
+    <Dégats taille="P">1d2</Dégats>
+    <Dégats taille="M">1d3</Dégats>
+    <Critique>
+      <ValeurJet>20</ValeurJet>
+      <Multiplicateur>2</Multiplicateur>
+    </Critique>
+    <Portée></Portée>
+    <Poids></Poids>
+    <Types choix="Oui">
+      <Type>C</Type>
+    </Types>
+    <Spécial>Non-létaux</Spécial>
+
+    <Munition></Munition>
+    
+    <Description></Description>
+  </Arme>
+
+  <Arme>
+    <Nom>Dague</Nom>
+    <Catégorie>Armes courantes</Catégorie>
+
+    <CAC>Oui</CAC>
+    <Distance>Oui</Distance>
+    <Légère>Oui</Légère>
+    <Mains>1</Mains>
+
+    <Prix devise="po">2</Prix>
+    <Dégats taille="P">1d3</Dégats>
+    <Dégats taille="M">1d4</Dégats>
+    <Critique>
+      <ValeurJet>19-20</ValeurJet>
+      <Multiplicateur>2</Multiplicateur>
+    </Critique>
+    <Portée>3</Portée>
+    <Poids unité="g">500</Poids>
+    <Types choix="Oui">
+      <Type>P</Type>
+      <Type>T</Type>
+    </Types>
+    <Spécial>Non-létaux</Spécial>
+
+    <Munition></Munition>
+
+    <Description></Description>
+  </Arme>
+
+</Armes>
