@@ -3,6 +3,7 @@
 
 #include "Containers.h"
 #include <QXmlStreamReader>
+#include <QFile>
 
 class WeaponParser {
 public:
@@ -10,10 +11,10 @@ public:
 	bool parse();
 private:
 	bool parseWeapons();
-
 private:
 	QXmlStreamReader reader;
 	Weapons weapons;
+	QFile xmlFile;
 };
 
 #endif // WEAPONPARSER_H

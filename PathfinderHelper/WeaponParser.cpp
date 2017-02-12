@@ -7,11 +7,11 @@
 using namespace std;
 
 WeaponParser::WeaponParser(const QString & filename) {
-	QFile xmlFile("armes.xml");
+	xmlFile.setFileName(filename);
 	if (!xmlFile.open(QIODevice::ReadOnly | QIODevice::Text)) {
 		std::cout << "Can't open file" << std::endl;
 	}
-
+	
 	reader.setDevice(&xmlFile);
 }
 
