@@ -2,6 +2,7 @@
 #define WEAPONPARSER_H
 
 #include "Containers.h"
+#include <QXmlStreamReader>
 
 class WeaponParser {
 public:

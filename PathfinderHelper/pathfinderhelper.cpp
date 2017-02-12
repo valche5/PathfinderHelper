@@ -17,6 +17,5 @@ PathfinderHelper::~PathfinderHelper() {
 }
 
 void PathfinderHelper::read() {
-	WeaponParser parser;
-	parser.parse("armes.xml");
+	WeaponParser parser("armes.xml");
 }
