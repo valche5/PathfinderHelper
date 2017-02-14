@@ -1,4 +1,4 @@
-/********************************************************************************
+﻿/********************************************************************************
 ** Form generated from reading UI file 'pathfinderhelper.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.7.0
@@ -15,6 +15,8 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QRadioButton>
@@ -29,7 +31,9 @@ class Ui_PathfinderHelperClass
 public:
     QWidget *centralWidget;
     QHBoxLayout *horizontalLayout;
+    QLabel *label;
     QRadioButton *radioButton;
+    QLineEdit *lineEdit;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -38,22 +42,32 @@ public:
     {
         if (PathfinderHelperClass->objectName().isEmpty())
             PathfinderHelperClass->setObjectName(QStringLiteral("PathfinderHelperClass"));
-        PathfinderHelperClass->resize(262, 94);
+        PathfinderHelperClass->resize(805, 553);
         centralWidget = new QWidget(PathfinderHelperClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         horizontalLayout = new QHBoxLayout(centralWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        label = new QLabel(centralWidget);
+        label->setObjectName(QStringLiteral("label"));
+
+        horizontalLayout->addWidget(label);
+
         radioButton = new QRadioButton(centralWidget);
         radioButton->setObjectName(QStringLiteral("radioButton"));
 
         horizontalLayout->addWidget(radioButton);
 
+        lineEdit = new QLineEdit(centralWidget);
+        lineEdit->setObjectName(QStringLiteral("lineEdit"));
+
+        horizontalLayout->addWidget(lineEdit);
+
         PathfinderHelperClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(PathfinderHelperClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 262, 21));
+        menuBar->setGeometry(QRect(0, 0, 805, 21));
         PathfinderHelperClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(PathfinderHelperClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -70,6 +84,7 @@ public:
     void retranslateUi(QMainWindow *PathfinderHelperClass)
     {
         PathfinderHelperClass->setWindowTitle(QApplication::translate("PathfinderHelperClass", "PathfinderHelper", 0));
+        label->setText(QApplication::translate("PathfinderHelperClass", "TextLabel", 0));
         radioButton->setText(QApplication::translate("PathfinderHelperClass", "RadioButton", 0));
     } // retranslateUi
 

@@ -1,4 +1,4 @@
-#ifndef WEAPONPARSER_H
+﻿#ifndef WEAPONPARSER_H
 #define WEAPONPARSER_H
 
 #include "Containers.h"
@@ -11,6 +11,7 @@ public:
 	bool parse();
 private:
 	bool parseWeapons();
+	bool parseWeapon();
 private:
 	QXmlStreamReader reader;
 	Weapons weapons;

@@ -1,4 +1,4 @@
-#ifndef CONTAINERS_H
+﻿#ifndef CONTAINERS_H
 #define CONTAINERS_H
 
 #include "Equipment.h"

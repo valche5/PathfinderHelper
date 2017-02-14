@@ -1,4 +1,4 @@
-#ifndef PATHFINDERHELPER_H
+﻿#ifndef PATHFINDERHELPER_H
 #define PATHFINDERHELPER_H
 
 #include <QtWidgets/QMainWindow>

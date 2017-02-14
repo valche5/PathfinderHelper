@@ -1,4 +1,4 @@
-#include "pathfinderhelper.h"
+﻿#include "pathfinderhelper.h"
 
 #include "WeaponParser.h"
 
@@ -18,4 +18,5 @@ PathfinderHelper::~PathfinderHelper() {
 
 void PathfinderHelper::read() {
 	WeaponParser parser("armes.xml");
+	parser.parse();
 }
